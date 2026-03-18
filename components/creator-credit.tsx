@@ -1,6 +1,18 @@
 "use client";
 
-import { Heart, Github, Linkedin, Twitter } from "lucide-react";
+import { Heart, Github, Linkedin } from "lucide-react";
+
+function XIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="h-4 w-4 fill-current"
+    >
+      <path d="M18.9 2H21l-4.6 5.26L21.8 22H15.9l-4.62-6.04L6 22H3.9l4.93-5.64L2.2 2h6.05l4.17 5.46L18.9 2Zm-1.03 18h1.16L7.63 3.9H6.39l11.48 16.1Z" />
+    </svg>
+  );
+}
 
 export function CreatorCredit() {
   return (
@@ -27,7 +39,7 @@ export function CreatorCredit() {
           rel="noreferrer"
           className="inline-flex items-center gap-2 transition hover:text-[var(--foreground)]"
         >
-          <Twitter className="h-4 w-4" />
+          <XIcon />
           X
         </a>
         <a
